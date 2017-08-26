@@ -12,7 +12,12 @@ import { AddLocationComponent } from './add-location/add-location.component';
 import { ListLocationsComponent } from './list-locations/list-locations.component';
 
 @NgModule({
-  declarations: [AppComponent, MapViewComponent, AddLocationComponent, ListLocationsComponent],
+  declarations: [
+    AppComponent,
+    MapViewComponent,
+    AddLocationComponent,
+    ListLocationsComponent
+  ],
   imports: [
     BrowserModule,
     StoreModule.forRoot({ root: locationReducer }),
