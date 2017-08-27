@@ -4,11 +4,12 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
-import { reducers, locationReducer } from './store';
+import { locationReducer } from './store';
 import { MapViewComponent } from './map-view/map-view.component';
 
 import { GoogleMapsService } from './services/google-maps.service';
 import { AddLocationComponent } from './add-location/add-location.component';
+import { AddSightingComponent } from './add-sighting/add-sighting.component';
 import { ListLocationsComponent } from './list-locations/list-locations.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ListLocationsComponent } from './list-locations/list-locations.componen
     AppComponent,
     MapViewComponent,
     AddLocationComponent,
-    ListLocationsComponent
+    ListLocationsComponent,
+    AddSightingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="col-sm-4">
+  <h3>Add New Sighting</h3>
+  <div class="form-group">
+    <input type="text" value="" placeholder="Location Name" class="form-control" id="locationName" #locationName />
+  </div>
+  <div class="form-group">
+    <input type="text" value="" placeholder="Pokemon Name" class="form-control" id="pokemonName" #pokemonName />
+  </div>
+  <input type="button" value="Submit" class="btn btn-submit" (click)="addPokemon(pokemonName.value, locationName.value)" />
+</div>
